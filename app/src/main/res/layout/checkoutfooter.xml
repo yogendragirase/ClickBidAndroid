@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/co_txtpaymenttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/paymenttype"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_box"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Spinner
+            android:id="@+id/co_etcredit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.9"
+            android:drawableRight="@mipmap/arrow"
+            android:dropDownWidth="fill_parent"
+            android:hint="Credit"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+
+        >
+
+
+        <TextView
+            android:id="@+id/co_nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NAME"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/co_firstlastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/firstnamelastname"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <EditText
+            android:id="@+id/co_etfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_box"
+            android:hint="RICHARD"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/co_etlastname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_box"
+            android:hint="FLEMING"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/co_cardnumbertxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:gravity="center_vertical"
+                android:text="@string/cardnumber"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/co_swipebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/blueboxbutton"
+                android:gravity="center"
+                android:text="SWIPE"
+                android:textColor="@color/whitecolor"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/co_cardnumbr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_box"
+            android:hint="6523 9996 4526 4545"
+            android:inputType="number"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/co_cvvtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cvv"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cv_cvvhinttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/cvvtext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/co_cvvet"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_box"
+            android:gravity="center"
+            android:hint="123"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/co_cvexpirydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expirydate"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/co_etexpirydate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_box"
+            android:drawableRight="@mipmap/arrow"
+            android:hint="08-August-1816"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="15dp"
+        android:background="#DBDBDB" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/co_phonetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/co_phonenotxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_box"
+            android:hint="321-155-4444"
+            android:inputType="number"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/co_emailtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/co_etemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_box"
+            android:hint="joe@example.com"
+            android:inputType="textWebEmailAddress"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/co_paybtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blueboxbutton"
+            android:text="PAY $125"
+            android:textColor="@color/whitecolor"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

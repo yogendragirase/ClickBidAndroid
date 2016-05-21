@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Light">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetEnd="0dp"
+            android:contentInsetStart="0dp"
+            android:background="#FFFFFF"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundcolor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/green"
+
+            >
+
+            <TextView
+                android:id="@+id/pi_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Katie Tyalor-Smith"
+                android:textSize="19sp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:textColor="@color/whitecolor"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nl_listhinttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/listofpaid"
+                android:layout_margin="10dp"
+                android:textSize="19sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="#DBDBDB"/>
+
+        <ListView
+            android:id="@+id/lv_paidlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            >
+
+
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

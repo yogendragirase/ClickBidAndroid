@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="UniMag_SDK_v5.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/UniMag_SDK_v5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

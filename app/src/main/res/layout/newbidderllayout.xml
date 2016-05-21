@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Light">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetEnd="0dp"
+            android:contentInsetStart="0dp"
+            android:background="#FFFFFF"
+
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nb_headerhintext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bidderheadertext1"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/headerhinttext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/bidderheadertext2"
+                    android:textSize="17sp"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/nb_nametxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NAME"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nb_firstlasttxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/firstnamelastname"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:weightSum="2">
+
+
+                    <EditText
+                        android:id="@+id/nb_etfirstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Richard"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:background="@drawable/search_box"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/nb_etlastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:singleLine="true"
+                        android:hint="Fleming"
+                        android:padding="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/search_box"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#DBDBDB"/>
+
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nb_phonetxt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/phone"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+
+                <EditText
+                    android:id="@+id/nb_etphoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/search_box"
+                    android:hint="321-155-4444"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nb_emailtxt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/email"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+
+                <EditText
+                    android:id="@+id/nb_etemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/search_box"
+                    android:hint="joe@example.com"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:inputType="textWebEmailAddress"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nb_companytxt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/company"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+
+                <EditText
+                    android:id="@+id/nb_etcompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/search_box"
+                    android:hint="joe@example.com"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:inputType="textWebEmailAddress"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nb_tablenametxt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tablename"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+
+                <EditText
+                    android:id="@+id/nb_ettable"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/search_box"
+                    android:hint="123"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/nb_cksendwelcometext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="SEND WELCOME TEXT"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/nb_ckrequirepass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Require PAssword"
+                    android:textAllCaps="true"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_nb_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nb_passtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/nb_etpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/search_box"
+                    android:inputType="textPassword"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_nb_cnfpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nb_cnfpasstext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password Again"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/nb_cnfetpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/search_box"
+                    android:inputType="textPassword"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/nb_cardnumbertxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/cardnumber"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="0.9"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:id="@+id/nb_swipebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/blueboxbutton"
+                        android:text="SWIPE"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:textColor="@color/whitecolor"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/nb_etcardnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:background="@drawable/search_box"
+                    android:hint="6523 9996 4526 4545"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/nb_cvvtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cvv"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/nb_cvvtxthint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cvvtext"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="italic"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/nb_etcvvnumber"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/search_box"
+                    android:hint="123"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/nb_datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nb_expirationdatetxt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/expirydate"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+
+                <EditText
+                    android:id="@+id/nb_etexpirationdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/search_box"
+                    android:hint="08-August-2016"
+                    android:padding="10dp"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:drawableRight="@mipmap/arrow"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <Button
+                android:id="@+id/nb_addbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blueboxbutton"
+                android:text="@string/add"
+                android:textSize="25sp"
+                android:textColor="@color/whitecolor"
+                />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
